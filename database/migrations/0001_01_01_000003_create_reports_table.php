@@ -26,6 +26,16 @@ return new class extends Migration
             $table->timestamps();
         });
 
+            Schema::create('report_images', function (Blueprint $table) {
+            $table->id();
+            $table->foreignId('report_id')->constrained()->cascadeOnDelete();
+            $table->string('path');          // storage path  e.g. report-images/abc.jpg
+            $table->string('original_name'); // original filename
+            $table->string('mime_type')->nullable();
+            $table->unsignedBigInteger('size')->nullable(); // bytes
+            $table->timestamps();
+        });
+
         Schema::create('report_timelines', function (Blueprint $table) {
             $table->id();
             $table->foreignId('report_id')->constrained()->cascadeOnDelete();
@@ -37,7 +47,8 @@ return new class extends Migration
 
     public function down(): void
     {
-        Schema::dropIfExists('report_timelines');
+         Schema::dropIfExists('report_timelines');
+        Schema::dropIfExists('report_images');
         Schema::dropIfExists('reports');
     }
 };
