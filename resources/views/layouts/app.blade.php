@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>@yield('title','CivicPulse') — Community Challenge Tracker</title>
+  <title>@yield('title','VoiceToAction') — Community Challenge Tracker</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet"/>
   <style>
@@ -31,7 +31,7 @@
       <span class="w-8 h-8 rounded-full flex items-center justify-center" style="background:var(--sage)">
         <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3z"/></svg>
       </span>
-      <span class="font-semibold text-lg tracking-tight" style="color:var(--charcoal)">CivicPulse</span>
+      <span class="font-semibold text-lg tracking-tight" style="color:var(--charcoal)">VoiceToAction</span>
     </a>
     <div class="hidden md:flex items-center gap-5 text-sm font-medium text-stone-600">
       <a href="{{ route('home') }}" class="nav-link">Home</a>
@@ -98,7 +98,7 @@
 @endif
 <main class="flex-1">@yield('content')</main>
 <footer class="border-t border-stone-200 py-8 px-4 text-center text-stone-400 text-sm mt-auto">
-  <p>© {{ date('Y') }} CivicPulse · Community Challenge Tracker</p>
+  <p>© {{ date('Y') }} VoiceToAction · Community Challenge Tracker</p>
 </footer>
 @stack('scripts')
 </body>

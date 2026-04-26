@@ -24,7 +24,7 @@ class DatabaseSeeder extends Seeder {
         User::create(['name'=>'Mary Roads','email'=>'roads@demo.com','password'=>Hash::make('password'),'role'=>'office_staff','office_id'=>'roads','is_active'=>true]);
         User::create(['name'=>'Super Admin','email'=>'admin@demo.com','password'=>Hash::make('password'),'role'=>'super_admin','is_active'=>true]);
 
-        $noteMap = ['Submitted'=>'Report received by CivicPulse','In Progress'=>'Office staff started working on this','Resolved'=>'Issue resolved by the office'];
+        $noteMap = ['Submitted'=>'Report received by VoiceToAction','In Progress'=>'Office staff started working on this','Resolved'=>'Issue resolved by the office'];
         $demo = [
             ['category'=>'electricity','office_id'=>'electricity','office_name'=>'Electricity Office','location'=>'Ilala, Uhuru Street','description'=>'Streetlights have been out for 3 weeks on Uhuru Street. Very dark and unsafe at night for residents.','priority'=>'High','status'=>'In Progress','submitter'=>'Alice K.','user_id'=>null,'timeline'=>['Submitted','Assigned','In Progress']],
             ['category'=>'water','office_id'=>'water','office_name'=>'Water & Sewage Office','location'=>'Kinondoni, Mwananyamala Road','description'=>'Main water pipe burst near the junction. Water flooding the road for 2 days and residents cannot access clean water.','priority'=>'High','status'=>'Assigned','submitter'=>'John M.','user_id'=>null,'timeline'=>['Submitted','Assigned']],

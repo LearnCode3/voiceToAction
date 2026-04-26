@@ -58,7 +58,7 @@ class ReportController extends Controller {
             }
         }
 
-        ReportTimeline::create(['report_id'=>$report->id,'status'=>'Submitted','note'=>'Report received by CivicPulse']);
+        ReportTimeline::create(['report_id'=>$report->id,'status'=>'Submitted','note'=>'Report received by VoiceToAction']);
         ReportTimeline::create(['report_id'=>$report->id,'status'=>'Assigned','note'=>"Automatically routed to {$office->name}"]);
 
         $imageCount = $report->images()->count();

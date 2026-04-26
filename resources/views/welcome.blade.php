@@ -12,7 +12,7 @@
   <div class="max-w-4xl mx-auto text-center fade-in">
     <span class="inline-block text-xs font-semibold tracking-widest uppercase mb-4 px-3 py-1 rounded-full" style="background:#e8f0e8;color:var(--sage)">Community-First Platform</span>
     <h1 class="text-4xl md:text-6xl leading-tight mb-6" style="color:var(--charcoal)">Report. Track.<br/><em style="color:var(--sage)">Resolve.</em></h1>
-    <p class="text-lg md:text-xl text-stone-500 max-w-2xl mx-auto mb-10 leading-relaxed">CivicPulse connects citizens with the right government offices to solve everyday community challenges — now with photo evidence support.</p>
+    <p class="text-lg md:text-xl text-stone-500 max-w-2xl mx-auto mb-10 leading-relaxed">VoiceToAction connects citizens with the right government offices to solve everyday community challenges — now with photo evidence support.</p>
     <div class="flex flex-col sm:flex-row gap-3 justify-center">
       <a href="{{ route('report.create') }}" class="btn-primary px-8 py-3.5 rounded-xl text-sm font-semibold inline-block">Report an Issue</a>
       @guest<a href="{{ route('register') }}" class="btn-outline px-8 py-3.5 rounded-xl text-sm font-semibold inline-block">Create Account</a>
@@ -72,7 +72,7 @@
 <section class="py-20 px-4 text-center">
   <div class="max-w-xl mx-auto">
     <h2 class="text-3xl md:text-4xl mb-4">Ready to make a difference?</h2>
-    <p class="text-stone-500 mb-8">Join citizens already using CivicPulse to improve their communities.</p>
+    <p class="text-stone-500 mb-8">Join citizens already using VoiceToAction to improve their communities.</p>
     <div class="flex flex-col sm:flex-row gap-3 justify-center">
       @guest<a href="{{ route('register') }}" class="btn-primary px-8 py-3.5 rounded-xl text-sm font-semibold inline-block">Get Started Free</a>@endguest
       <a href="{{ route('report.create') }}" class="btn-outline px-8 py-3.5 rounded-xl text-sm font-semibold inline-block">Report an Issue</a>
